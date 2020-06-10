@@ -6,6 +6,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.sakib.googlenews.R;
@@ -17,7 +18,8 @@ import androidx.appcompat.widget.Toolbar;
 public class NewsDetailActivity extends AppCompatActivity {
     private WebView webView = null;
     private Toolbar toolbar;
-    TextView mTitle;
+    private  TextView mTitle;
+    private EditText weburl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,8 @@ public class NewsDetailActivity extends AppCompatActivity {
         webView.setWebViewClient(webViewClient);
         webView.loadUrl(url);
 
+        weburl.setText(webView.getUrl());
+
     }
 
     void initViews()
@@ -48,6 +52,7 @@ public class NewsDetailActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         this.webView = (WebView) findViewById(R.id.webview);
         mTitle = (TextView) toolbar.findViewById(R.id.toolbar_text);
+        weburl = (EditText) toolbar.findViewById(R.id.weburl);
     }
 
     @Override
