@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space">5dp</dimen>
+    <dimen name="imageheight">120dp</dimen>
+    <dimen name="marginleft">16dp</dimen>
+    <dimen name="marginright">16dp</dimen>
+    <dimen name="margintop">10dp</dimen>
+    <dimen name="marginbottom">10dp</dimen>
+    <dimen name="marginleftcard">11dp</dimen>
+    <dimen name="marginrightcard">11dp</dimen>
+    <dimen name="margintopcard">7dp</dimen>
+    <dimen name="marginbottomcard">7dp</dimen>
+    <dimen name="cardElevation">2dp</dimen>
+    <dimen name="cardCornerRadius">10dp</dimen>
+    <dimen name="drawablePadding">10dp</dimen>
+
+    <dimen name="textsize">17sp</dimen>
+</resources>
